@@ -26,7 +26,7 @@
     text-align: justify;
   }
   
-  /* Pseudo-class: change legend color on hover (example) */
+  /* Pseudo-class: change legend color on hover */
   form:hover {
     background-color: #f9f9f9;
   }
