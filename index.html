@@ -1,0 +1,132 @@
+<!-- File: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search for tutors at Tutor Discover">
+  <title>Search Tutors - Tutor Discover</title>
+  <link rel="stylesheet" href="style/general.css">
+  <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+  <a id="top"></a>
+  <header>
+    <img src="images/logo.png" alt="Tutor Doc Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Search Tutors</a></li>
+        <li><a href="mytutors.html">My Tutors</a></li>
+        <li><a href="tutorprofile.html">Tutor Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Search Tutors</h1>
+    <figure>
+      <img src="images/banner.jpg" alt="Students studying" class="avatar">
+      <figcaption>Helping you find the perfect tutor</figcaption>
+    </figure>
+    <p>Use the form below to find tutors matching your needs:</p>
+    <a href="#search-form">Jump to search form</a>
+    <form id="search-form">
+      <label for="search-query">Search:</label>
+      <input type="search" id="search-query" name="search-query" placeholder="Search tutors...">
+
+      <label for="education-level">Level of Education:</label>
+      <select id="education-level" name="education-level">
+        <option value="highschool">High School</option>
+        <option value="undergrad">Undergraduate</option>
+        <option value="graduate">Graduate</option>
+      </select>
+
+      <label for="learning-style">Learning Style:</label>
+      <select id="learning-style" name="learning-style">
+        <option value="visual">Visual</option>
+        <option value="auditory">Auditory</option>
+        <option value="kinesthetic">Kinesthetic</option>
+      </select>
+
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject">
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="english">English</option>
+      </select>
+
+      <button type="submit">Search</button>
+    </form>
+
+    <ul class="tutor-list">
+      <li>
+        <img src="images/avatar.png" alt="Michelle Hendley">
+        <div>
+          <h2>Michelle Hendley</h2>
+          <p>San Francisco, CA</p>
+          <p>★★★★★</p>
+        </div>
+      </li>
+      <li>
+        <img src="images/avatar.png" alt="Kimberly White">
+        <div>
+          <h2>Kimberly White</h2>
+          <p>Manhattan, NY</p>
+          <p>★★★★☆</p>
+        </div>
+      </li>
+      <li>
+        <img src="images/avatar.png" alt="Steve Rogers">
+        <div>
+          <h2>Steve Rogers</h2>
+          <p>Brooklyn, NY</p>
+          <p>★★★☆☆</p>
+        </div>
+      </li>
+      <li>
+        <img src="images/avatar.png" alt="Amy Pattersson">
+        <div>
+          <h2>Amy Pattersson</h2>
+          <p>Little Indian, ABQ</p>
+          <p>★★★★☆</p>
+        </div>
+      </li>
+      <li>
+        <img src="images/avatar.png" alt="Hannah Paige">
+        <div>
+          <h2>Hannah Paige</h2>
+          <p>San Francisco, CA</p>
+          <p>★★★☆☆</p>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="tutor-table">Tutors by Subject</h2>
+    <table class="striped">
+      <thead>
+        <tr>
+          <th colspan="2">Tutors by Subject</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Math</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td>12</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="#top">Back to top</a>
+  </main>
+  <footer>
+    &copy; 2025 Tutor Discover
+  </footer>
+</body>
+</html>

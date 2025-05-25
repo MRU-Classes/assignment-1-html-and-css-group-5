@@ -1,0 +1,29 @@
+/* Float the banner image */
+.avatar {
+    float: right;
+    width: 150px;
+    margin: 0 0 10px 10px;
+  }
+  
+  /* Pseudo-element: style first letter of intro paragraph */
+  main p:first-letter {
+    font-size: 2em;
+    color: #4e9a8a;
+  }
+  
+  /* Pseudo-class: focus on search input */
+  input[type="search"]:focus {
+    outline: 2px solid #4e9a8a;
+  }
+  
+  /* Contextual selector for tutor-list images */
+  ul.tutor-list li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  /* Striped table rows */
+  table.striped tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }

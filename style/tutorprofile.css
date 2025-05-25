@@ -1,0 +1,21 @@
+.profile-pic {
+    width: 120px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .rating {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .bio {
+    margin: 15px 0;
+    text-align: justify;
+  }
+  
+  /* Pseudo-class: change legend color on hover (example) */
+  form:hover {
+    background-color: #f9f9f9;
+  }

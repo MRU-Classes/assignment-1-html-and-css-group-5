@@ -1,0 +1,90 @@
+<!-- File: tutorprofile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tutor profile details at Tutor Discover">
+  <title>Tutor Profile - Tutor Discover</title>
+  <link rel="stylesheet" href="style/general.css">
+  <link rel="stylesheet" href="style/tutorprofile.css">
+</head>
+<body>
+  <a id="top"></a>
+  <header>
+    <img src="images/logo.png" alt="Tutor Discover Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Search Tutors</a></li>
+        <li><a href="mytutors.html">My Tutors</a></li>
+        <li><a href="tutorprofile.html" class="active">Tutor Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1>Steve Rogers</h1>
+      <figure>
+        <img src="images/avatar.png" alt="Steve Rogers" class="profile-pic">
+        <figcaption>Professional tutor in Data Analytics</figcaption>
+      </figure>
+      <p><strong>Education:</strong> Master’s Degree in Data Analytics</p>
+      <p class="rating">&#9733;&#9733;&#9733;&#9733;&#9734; (4.3) 53 Reviews</p>
+      <p class="bio">I am a graduate student currently getting my Master’s degree in Data Analytics while working as a tutor to support myself. I have a strong background in math and business-related subjects like finance and statistics, and I enjoy helping students who struggle with numbers. I want to work with students who are willing to learn and improve and put the time in.</p>
+
+      <h2 id="availability">Availability</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Monday &amp; Wednesday</td>
+            <td>5:00pm - 8:00pm</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="#availability">See Availability Above</a>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:steve.rogers@example.com" method="get" enctype="text/plain">
+          <label for="subject">Subject (required):</label>
+          <input type="text" id="subject" name="subject" maxlength="100" required>
+
+          <label for="email">Email (required):</label>
+          <input type="email" id="email" name="email" placeholder="name@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+          <label for="phone">Phone (optional):</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}">
+
+          <label>Preferred Contact Method:</label>
+          <label><input type="radio" name="contact-method" value="email" checked> Email</label>
+          <label><input type="radio" name="contact-method" value="phone"> Phone</label>
+
+          <label>Services Interested In:</label>
+          <label><input type="checkbox" name="service" value="in-person"> In-person</label>
+          <label><input type="checkbox" name="service" value="online"> Online</label>
+
+          <label for="message">Message (required):</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <label for="date">Preferred Date:</label>
+          <input type="date" id="date" name="date">
+
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <a href="#top">Back to top</a>
+    </article>
+  </main>
+  <footer>
+    &copy; 2025 Tutor Discover
+  </footer>
+</body>
+</html>

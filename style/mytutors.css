@@ -1,0 +1,14 @@
+/* Attribute selector: style external links */
+a[href^="http"] {
+    color: #4e9a8a;
+    text-decoration: none;
+  }
+  a[href^="http"]:hover {
+    text-decoration: underline;
+  }
+  
+  .tutor-list li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
