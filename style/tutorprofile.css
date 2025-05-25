@@ -1,13 +1,24 @@
 .profile-pic {
-    width: 120px;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
   }
   
   .rating {
-    text-align: center;
-    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #f5c518;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+
+  .reviews {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: -8px;
+    margin-bottom: 12px;
+    padding-left: 2px;
   }
   
   .bio {
@@ -19,3 +30,66 @@
   form:hover {
     background-color: #f9f9f9;
   }
+
+  .availability-table {
+    width: 60%;
+    max-width: 500px;
+    margin: 10px 0 20px 0;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    background-color: #f0fafa;
+    border: 1px solid #ccc;
+  }
+
+  .availability-table th,
+  .availability-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .availability-table thead {
+    background-color: #e0f4f4;
+    color: #1a3c40;
+  }  
+
+  /* Cleaning up the 'Contact Me' Section to look cleaner */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: flex-start;
+    max-width: 800px;
+    margin-top: 20px;
+  }
+  
+  form label {
+    flex: 1 1 200px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form input[type="date"],
+  form textarea {
+    flex: 2 1 300px;
+    padding: 6px;
+  }
+  
+  form textarea {
+    height: 80px;
+    resize: vertical;
+  }
+  
+  form button {
+    margin-top: 10px;
+    padding: 6px 12px;
+  }
+
+h2 {
+  margin-bottom: 0.4em;
+}
+
+form {
+  margin-top: 0;
+}

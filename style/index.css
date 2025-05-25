@@ -5,12 +5,6 @@
     margin: 0 0 10px 10px;
   }
   
-  /* Pseudo-element: style first letter of intro paragraph */
-  main p:first-letter {
-    font-size: 2em;
-    color: #4e9a8a;
-  }
-  
   /* Pseudo-class: focus on search input */
   input[type="search"]:focus {
     outline: 2px solid #4e9a8a;
