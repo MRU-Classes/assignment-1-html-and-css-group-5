@@ -73,7 +73,7 @@ a[href^="http"] {
 }
 
 /* Each tutor profile card */
-.tutor-list li {
+.tutor-list .tutor-card {
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 8px;
