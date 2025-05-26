@@ -21,30 +21,19 @@
     </nav>
   </header>
   <main>
-    <h1>Search Tutors</h1>
-    <figure>
-      <img src="images/banner.jpg" alt="Students studying" class="avatar">
-      <figcaption>Helping you find the perfect tutor</figcaption>
-    </figure>
+    <div class="page-header">
+      <h1>Search Tutors</h1>
+      <figure class="tutor-illustration">
+        <img src="images/study.png" alt="Students studying" class="avatar" />
+        <figcaption>Helping you find the perfect tutor</figcaption>
+      </figure>
+    </div>
+    
     <p>Use the form below to find tutors matching your needs:</p>
     <a href="#search-form">Jump to search form</a>
     <form id="search-form">
       <label for="search-query">Search:</label>
       <input type="search" id="search-query" name="search-query" placeholder="Search tutors...">
-
-      <label for="education-level">Level of Education:</label>
-      <select id="education-level" name="education-level">
-        <option value="highschool">High School</option>
-        <option value="undergrad">Undergraduate</option>
-        <option value="graduate">Graduate</option>
-      </select>
-
-      <label for="learning-style">Learning Style:</label>
-      <select id="learning-style" name="learning-style">
-        <option value="visual">Visual</option>
-        <option value="auditory">Auditory</option>
-        <option value="kinesthetic">Kinesthetic</option>
-      </select>
 
       <label for="subject">Subject:</label>
       <select id="subject" name="subject">
@@ -57,8 +46,7 @@
     </form>
 
     <ul class="tutor-list">
-      <div class="tutor-grid">
-
+      
         <div class="tutor-card">
           <img src="images/smiling-girl.png" alt="Michelle Hendley">
           <h2>Michelle Hendley</h2>
