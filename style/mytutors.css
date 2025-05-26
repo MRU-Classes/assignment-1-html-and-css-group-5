@@ -21,6 +21,21 @@ a[href^="http"] {
   margin-top: 4px;
 }
 
+  /* Pseudo-class: focus on search input */
+  button[type="submit"] {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 42px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
 /* Tutor image */
 .tutor-list img {
   width: 80px;         /* shrink avatars */
@@ -44,10 +59,9 @@ a[href^="http"] {
   font-size: 0.95em;
 }
 
-  /* Pseudo-class: focus on search input */
-  input[type="search"]:focus {
-    outline: 2px solid #4e9a8a;
-  }
+input[type="search"] {
+  padding: 0.8rem 1rem;    /* more vertical padding → taller box */
+}
   
   /* Contextual selector for tutor-list images */
   ul.tutor-list li img {
