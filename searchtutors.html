@@ -1,10 +1,11 @@
+<!-- File: searchTutors.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Search for tutors at Tutor Discover">
-  <title>Search Tutors - Tutor Discover</title>
+  <meta name="description" content="Search for tutors at Tutor Doc">
+  <title>Search Tutors - Tutor Doc</title>
   <link rel="stylesheet" href="style/general.css">
   <link rel="stylesheet" href="style/searchTutors.css">
 </head>
@@ -31,7 +32,6 @@
     <h1>Search Tutors</h1>
     
     <p>Use the form below to find tutors matching your needs:</p>
-    <a href="#search-form">Jump to search form</a>
     <form id="search-form">
       <label for="search-query">Search:</label>
       <input type="search" id="search-query" name="search-query" placeholder="Search tutors...">
@@ -48,65 +48,71 @@
 
     <ul class="tutor-list">
       
-        <div class="tutor-card">
+        <li class="tutor-card">
           <img src="images/smiling-girl.png" alt="Michelle Hendley">
           <h2>Michelle Hendley</h2>
           <p>Calgary, AB</p>
           <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-        </div>
+        </li>
       
-        <div class="tutor-card">
+        <li class="tutor-card">
           <img src="images/smiling-girl.png" alt="Kimberly White">
           <h2>Kimberly White</h2>
           <p>Edmonton, AB</p>
           <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-        </div>
+        </li>
       
-        <div class="tutor-card">
+        <li class="tutor-card">
           <img src="images/smiling-boy.png" alt="Steve Rogers">
           <h2><a href="tutorprofile.html" class="tutor-name">Steve Rogers</a></h2>
           <p>Edmonton, AB</p>
           <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-        </div>
+        </li>
 
-        <div class="tutor-card">
+        <li class="tutor-card">
           <img src="images/smiling-girl.png" alt="Amy Pattersson">
           <h2>Amy Pattersson</h2>
           <p>Calgary, AB</p>
           <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-        </div>
+        </li>
 
-        <div class="tutor-card">
+        <li class="tutor-card">
           <img src="images/smiling-boy.png" alt="Adam Braverman">
           <h2>Adam Braverman</h2>
           <p>Calgary, AB</p>
           <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-        </div>        
+        </li>        
 
     </ul>
 
-    <h2 id="tutor-table">Tutors by Subject</h2>
-    <table class="striped">
-      <thead>
-        <tr>
-          <th colspan="2">Tutors by Subject</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Math</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>Science</td>
-          <td>8</td>
-        </tr>
-        <tr>
-          <td>English</td>
-          <td>12</td>
-        </tr>
-      </tbody>
-    </table>
+<table class="striped subject-table">
+
+  <thead>
+    <!-- Merged header cell spanning both columns -->
+    <tr>
+      <th colspan="2">Tutors by Subject</th>
+    </tr>
+    <tr>
+      <th>Class</th>
+      <th># of Tutors Available</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Linear Algebra</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Web I</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Thermodynamics</td>
+      <td>12</td>
+    </tr>
+  </tbody>
+</table>
 
     <a href="#top">Back to top</a>
   </main>

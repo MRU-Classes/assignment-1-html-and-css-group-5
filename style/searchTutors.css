@@ -1,88 +1,25 @@
-/* Float the banner image */
-.avatar {
-    float: right;
-    width: 150px;
-    margin: 0 0 10px 10px;
-  }
-  
-  h1 {
-    margin-bottom: 0.2rem; /* reduce from larger default spacing */
-  }
+main > p {
+  margin-bottom: 0.5rem;
+}
 
-  main {
-    padding-top: 0;
-    margin-top: 0;
-  }
-
-  /* Pseudo-class: focus on search input */
-  button[type="submit"] {
-    padding: 0.6rem 1.2rem;
-    font-size: 1rem;
-    border-radius: 4px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    height: 42px;
-    box-sizing: border-box;
-    vertical-align: middle;
-    display: inline-block;
-  }
-  
-  /* Hover effect */
-  button[type="submit"]:hover {
-    background-color: #388e3c;
-  }
-  
-  /* Contextual selector for tutor-list images */
-  ul.tutor-list li img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  
-  /* Striped table rows */
-  table.striped tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-
-  /* Studying picture */
-  /* Aligns the hero graphic under Search Tutors with good spacing */
 .hero-graphic {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1.5rem 0 0.5rem;
+  float: right;       
+  width: 100px;      
+  margin: 1.5rem 0 0.5rem; 
+  text-align: center; 
 }
 
 .hero-graphic .avatar {
-  width: 100px;
+  width: 100%;
   height: auto;
-  display: block;
+  display: block;    
 }
 
 .hero-graphic figcaption {
   font-style: italic;
-  font-size: 1rem;
-  text-align: center;
+  font-size: 0.9rem;
   margin-top: 0.5rem;
 }
-
-/* Align h1 and form content to left */
-main h1 {
-  margin-bottom: 0.5rem;
-  padding-left: 2rem; /* aligns with form spacing */
-  text-align: left;
-}
-
-  /* Flex-container for header */
-  .page-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 0.5rem; 
-    padding: 0 2rem;
-  }
 
   /* Grid layout for tutor list */
 .tutor-list {
@@ -94,17 +31,6 @@ main h1 {
   margin: 20px 0;
 }
 
-/* Each tutor profile card */
-.tutor-list li {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
-  text-align: center;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-  /* prevent any overly‑wide cards */
-  max-width: 300px;
-}
 .tutor-card img {
   width: 70px;
   height: 70px;
@@ -113,94 +39,16 @@ main h1 {
   margin: 0 auto 10px;  /* center + small bottom gap */
 }
 
-/* Tutor image */
-.tutor-list li img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 12px;
-}
-
-/* Tutor name */
-.tutor-list li h2 {
-  font-size: 1.1em;
-  margin: 8px 0 4px;
-  color: #1a3d5d;
-}
-
-
-/* Tutor location */
-.tutor-list li p:nth-of-type(2) {
-  margin: 4px 0;
-  color: #555;
-  font-size: 0.95em;
-}
-
-/* Star rating */
-.tutor-list li p:nth-of-type(3) {
-  color: #f5c518;
-  font-size: 1.1em;
-  letter-spacing: 1px;
-  margin-top: 6px;
-}
-
-/* Name link — custom color instead of browser blue */
-.tutor-card .tutor-name {
-  display: inline-block;
-  font-size: 1.1em;
-  color: #2c3e50;           
-  text-decoration: none;
-  margin-bottom: 6px;
-  transition: color 0.2s;
-}
-
-.tutor-card .tutor-name:hover {
-  color: #1a2733;           
-  text-decoration: underline;
-}
-
-/* Fix spacing and layout around header */
-header.page-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 1rem 1rem;
-}
-
-/* Ensure header title aligns with main content */
-header.page-header h1 {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-/* Clean image spacing */
-.tutor-illustration {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.tutor-illustration img {
-  max-width: 120px;
-  height: auto;
-  margin-bottom: 0.5rem;
-}
-
-.tutor-illustration figcaption {
-  font-style: italic;
-  font-size: 1rem;
-  text-align: center;
-}
+  /* Striped table rows */
+  table.striped tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
 
 /* Fix search form layout */
 #search-form {
-  display: flex;
+  align-items: left;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.5rem;
   justify-content: center;
   margin-bottom: 2rem;
 }
@@ -211,20 +59,46 @@ header.page-header h1 {
 
 #search-form input[type="search"],
 #search-form select {
+
   padding: 0.6rem 1rem;
   font-size: 1rem;
-  border-radius: 6px;
+
+  height: 42px;
+  box-sizing: border-box;
+
   border: 1px solid #ccc;
+  border-radius: 4px;
+
+  background-color: #fff;
+  color: #333;
+
+  vertical-align: middle;
+
 }
 
-#search-form button[type="submit"] {
-  padding: 0.6rem 1rem;
+#search-form input[type="search"]:hover {
+  background-color: #f9f9f9;   /* light gray tint */
+  border-color:   #999;        /* slightly darker border */
+}
+
+#search-form select:hover {
+  background-color: #f9f9f9;  /* light gray tint on hover */
+  border-color:   #999;       /* slightly darker border */
+}
+
+/* Pseudo-class: focus on search input */
+button[type="submit"] {
+  padding: 0.6rem 1.2rem;
   font-size: 1rem;
+  border-radius: 4px;
   background-color: #4caf50;
   color: white;
   border: none;
-  border-radius: 6px;
   cursor: pointer;
+  height: 42px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 #search-form button[type="submit"]:hover {

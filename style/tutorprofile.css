@@ -1,126 +1,136 @@
+main > p {
+  margin-bottom: 0.5rem;
+}
+
+main article h1 {
+  font-size: 2rem;   
+  line-height: 1.2;     
+  margin-top: 0.5rem;
+}
+
 .profile-pic {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-  
-  .rating {
-    font-size: 1.1rem;
-    color: #f5c518;
-    margin-left: 6px;
-    vertical-align: middle;
-  }
-
-  .reviews {
-    font-size: 0.9rem;
-    color: #555;
-    margin-top: -8px;
-    margin-bottom: 12px;
-    padding-left: 2px;
-  }
-  
-  .bio {
-    margin: 15px 0;
-    text-align: justify;
-  }
-  
-  /* Pseudo-class: change legend color on hover */
-  form:hover {
-    background-color: #f9f9f9;
-  }
-
-  .availability-table {
-    width: 60%;
-    max-width: 500px;
-    margin: 10px 0 20px 0;
-    border-collapse: collapse;
-    font-size: 0.95rem;
-    background-color: #f0fafa;
-    border: 1px solid #ccc;
-  }
-
-  .availability-table th,
-  .availability-table td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  .availability-table thead {
-    background-color: #e0f4f4;
-    color: #1a3c40;
-  }  
-
-  /* Cleaning up the 'Contact Me' Section to look cleaner */
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    max-width: 500px;
-    margin-top: 10px;
-  }
-  
-  .form-row {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-row label {
-    font-weight: bold;
-    margin-bottom: 4px;
-  }
-  
-  form input,
-    form textarea {
-      padding: 6px;
-    font-size: 0.95rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  form textarea {
-    min-height: 80px;
-    resize: vertical;
-  }
-
-  .form-row.buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 12px;
-    margin-top: 10px;
-  }
-
-  .form-row.buttons button {
-    padding: 8px 16px;
-    font-size: 0.95rem;
-    border: none;
-    border-radius: 4px;
-    background-color: #4c9e91;
-    color: white;
-    cursor: pointer;
-    width: fit-content;
-    flex: 0 0 auto;
-    text-align: center;
-  }
-
-  .form-row.buttons button:hover {
-    background-color: #3b857a;
-  }
-
-  input[type="date"] {
-    max-width: 200px;
-    padding: 6px;
-    font-size: 0.95rem;
-  }
-
-h2 {
-  margin-bottom: 0.4em;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
+.rating {
+  font-size: 1.1rem;
+  color: #f5c518;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.reviews {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: -8px;
+  margin-bottom: 12px;
+  padding-left: 2px;
+}
+
+.bio {
+  margin: 15px 0;
+  text-align: justify;
+}
+
+/* style the very first letter of the intro paragraph */
+.profile-intro::first-letter {
+  font-size: 2rem;        
+  font-weight: bold;      
+  color: #4e9a8a;      
+  float: left;           
+  line-height: 1;         
+  margin-right: 0.2em;   
+}
+
+.availability-table {
+  width: 60%;
+  max-width: 500px;
+  margin: 10px 0 20px 0;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background-color: #f0fafa;
+  border: 1px solid #ccc;
+}
+
+.availability-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Cleaning up the 'Contact Me' Section to look cleaner */
 form {
-  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+  margin-top: 10px;
 }
 
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+form input,
+  form textarea {
+    padding: 6px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Hover effect on all text inputs and textareas */
+form input:hover,
+form textarea:hover {
+  background-color: #f9f9f9;  /* light gray tint */
+  border-color:   #999;       /* slightly darker border */
+}
+
+form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.form-row.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.form-row.buttons button {
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #4c9e91;
+  color: white;
+  cursor: pointer;
+  width: fit-content;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.form-row.buttons button:hover {
+  background-color: #3b857a;
+}
+
+input[type="date"] {
+  max-width: 200px;
+  padding: 6px;
+  font-size: 0.95rem;
+}
+
+a[href="#top"] {
+  display: inline-block;
+  margin-top: 1rem;   
+}

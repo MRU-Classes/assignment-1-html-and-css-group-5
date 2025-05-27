@@ -1,100 +1,78 @@
-/* Attribute selector: style external links */
-a[href^="http"] {
-    color: #4e9a8a;
-    text-decoration: none;
-  }
-  a[href^="http"]:hover {
-    text-decoration: underline;
-  }
-  
-  .tutor-list li img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-
-/* Star rating */
-.tutor-list p:nth-of-type(3) {
-  color: #f5c518;      /* gold color */
-  font-size: 1.1em;
-  letter-spacing: 1px;
-  margin-top: 4px;
+main > p {
+  margin-bottom: 0.5rem;
 }
 
-  /* Pseudo-class: focus on search input */
-  button[type="submit"] {
-    padding: 0.6rem 1.2rem;
-    font-size: 1rem;
-    border-radius: 4px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    height: 42px;
-    box-sizing: border-box;
-    vertical-align: middle;
-    display: inline-block;
-  }
+  /* Grid layout for tutor list */
+.tutor-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+  padding: 0;
+  list-style: none;
+  margin: 20px 0;
+}
 
 /* Tutor image */
-.tutor-list img {
-  width: 80px;         /* shrink avatars */
-  height: 80px;
+.tutor-list li img {
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 12px; /* a bit more breathing room under the image */
-}
-
-/* Tutor name */
-.tutor-list h2 {
-  font-size: 1.1em;
-  margin: 8px 0 4px;
-  color: #1a3d5d;
-}
-
-/* Tutor location */
-.tutor-list p:nth-of-type(2) {
-  margin: 4px 0;
-  color: #555;
-  font-size: 0.95em;
+  margin-bottom: 12px;
 }
 
 input[type="search"] {
-  padding: 0.8rem 1rem;    /* more vertical padding → taller box */
-}
-  
-  /* Contextual selector for tutor-list images */
-  ul.tutor-list li img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  
-  /* Striped table rows */
-  table.striped tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
 
-/* Grid layout for tutor list */
-.tutor-list {
-  display: flex;
-  flex-wrap: wrap;
-  /* shrink the min‑width for each card to 200px */
-  gap: 24px;           /* space between cards */
-  padding: 0;
-  margin-top: 20px;
-  list-style: none;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+
+  height: 42px;
+  box-sizing: border-box;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  background-color: #fff;
+  color: #333;
+
+  vertical-align: middle;
 }
 
-/* Each tutor profile card */
-.tutor-list li {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 12px;       /* a little less padding */
-  text-align: center;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  /* remove any max-width so cards can flow in the grid */
-  max-width: none;
-  flex: 0 0 200px;
+#search-form input[type="search"]:hover {
+  background-color: #f9f9f9;   /* light gray tint */
+  border-color:   #999;        /* slightly darker border */
 }
+
+#search-form label {
+  margin-right: 0.5rem;
+}
+
+/* Pseudo-class: focus on search input */
+button[type="submit"] {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 42px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+button[type="submit"]:hover {
+  background-color: #388e3c;
+}
+
+/* Attribute selector: style external links */
+a[href^="http"] {
+    color: #4e9a8a;
+    text-decoration: underline;
+}
+
+a[href^="http"]:hover {
+    text-decoration: underline;
+}
+
