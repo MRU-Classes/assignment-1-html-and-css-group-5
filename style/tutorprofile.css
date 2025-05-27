@@ -37,13 +37,13 @@ main article h1 {
 }
 
 /* style the very first letter of the intro paragraph */
-.profile-intro::first-letter {
+.bio::first-letter {
+  display: inline-block;
   font-size: 2rem;        
   font-weight: bold;      
-  color: #4e9a8a;      
-  float: left;           
-  line-height: 1;         
-  margin-right: 0.2em;   
+  color: #4e9a8a;            
+  line-height: 1;
+  vertical-align: bottom;
 }
 
 .availability-table {
